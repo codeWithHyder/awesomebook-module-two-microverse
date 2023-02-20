@@ -9,10 +9,6 @@ const BookList = {
     title: 'animal tree',
     description: 'animal sdksdkoskpsdodsks',
   },
-  2: {
-    title: 'animal tree',
-    description: 'animal sdksdkoskpsdodsks',
-  },
 };
 
 let html = '';
@@ -21,10 +17,12 @@ const BookLength = Object.keys(BookList);
 
 for (let i = 0; i < BookLength.length; i += 1) {
   html += `<div class="single-book">
-    <ul>
-        <li>Book title: ${BookList[i].title}</li>
-        <li>Book desc: ${BookList[i].description}</li>
-    </ul>
+  <ul>
+      <li>${BookList[i].title}</li>
+      <li>${BookList[i].description}</li>
+  </ul>
+  <button class="remove">Remove</button>
+  <hr>
 </div>`;
 }
 

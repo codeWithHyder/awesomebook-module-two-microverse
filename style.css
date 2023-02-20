@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .wrapper {
@@ -8,8 +9,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  padding-left: 100px;
+  gap: 5px;
 }
 
 .book-container {
@@ -17,28 +17,33 @@
   width: 200px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .single-book {
-  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   display: flex;
   flex-direction: column;
-  height: 100px;
-  width: 100%;
+  height: auto;
+  gap: 7px;
 }
 
 .single-book ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   list-style: none;
 }
 
 .single-book ul li {
   color: black;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.single-book .remove{
+    width: 40%;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    border: 0.2px solid #868686;
 }
 
 .form-container {
@@ -49,6 +54,15 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1px;
-  
+  gap: 12px;
+  width: 70%;
+}
+form button{
+    cursor: pointer;
+    width: 30px;
+    background-color: #EFEFEF;
+    border: 0.2px solid #868686;
+}
+input{
+    padding-left: 3px;
 }
