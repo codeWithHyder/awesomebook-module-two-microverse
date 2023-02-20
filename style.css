@@ -9,11 +9,12 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding-left: 100px;
 }
 
 .book-container {
   height: auto;
-  width: 500px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -38,4 +39,16 @@
   color: black;
   font-weight: bold;
   font-size: 20px;
+}
+
+.form-container {
+  width: 200px;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  
 }
