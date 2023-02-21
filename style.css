@@ -1,68 +1,53 @@
 * {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
-  padding: 0;
 }
 
-.wrapper {
-  height: 100vh;
-  width: 100vw;
+.hr {
+  width: 80%;
+  margin-left: 0;
+  margin-top: 0.5rem;
+}
+
+.booklst {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-}
-
-.book-container {
+  gap: 0.3rem;
+  width: 30%;
   height: auto;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
-.single-book {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  gap: 7px;
+.booklst input {
+  width: 15rem;
+  height: 1.5rem;
+  outline: none;
 }
 
-.single-book ul {
-  display: flex;
-  flex-direction: column;
+.booklst .btn {
+  width: 38%;
+  height: 1.5rem;
+}
+
+.booklst .btnr {
+  width: 5rem;
+  height: 2rem;
+}
+
+.booklst li {
   list-style: none;
 }
 
-.single-book ul li {
-  color: black;
-  font-size: 17px;
-  line-height: 19px;
-  font-weight: 400;
-}
-.single-book .remove{
-    width: 40%;
-    cursor: pointer;
-    background-color: #EFEFEF;
-    border: 0.2px solid #868686;
-}
-
-.form-container {
-  width: 200px;
-  height: auto;
-}
-
-form {
+.addbtn {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  width: 70%;
-}
-form button{
-    cursor: pointer;
-    width: 30px;
-    background-color: #EFEFEF;
-    border: 0.2px solid #868686;
-}
-input{
-    padding-left: 3px;
+  row-gap: 0.3rem;
+  width: 3rem;
+  height: auto;
+  margin-left: 0;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  cursor: pointer;
 }
