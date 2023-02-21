@@ -1,29 +1,35 @@
 const BookContainer = document.querySelector('.book-container');
+const form = document.getElementById('myForm');
 
-const BookList = {
-  0: {
-    title: 'animal tree',
-    description: 'animal sdksdkoskpsdodsks',
-  },
-  1: {
-    title: 'animal tree',
-    description: 'animal sdksdkoskpsdodsks',
-  },
-};
-
-let html = '';
-
-const BookLength = Object.keys(BookList);
-
-for (let i = 0; i < BookLength.length; i += 1) {
-  html += `<div class="single-book">
+const BookList = [];
+function removeData(index) {
+  BookList.splice(index, 1);
+  addData();
+}
+function addData() {
+  let html = '';
+  for (let i = 0; i < BookList.length; i += 1) {
+    html += `<div class="single-book">
   <ul>
       <li>${BookList[i].title}</li>
-      <li>${BookList[i].description}</li>
+      <li>${BookList[i].author}</li>
   </ul>
-  <button class="remove">Remove</button>
+  <button onclick='removeData(" + i + ")'>Remove</button>
   <hr>
 </div>`;
+  }
+  BookContainer.innerHTML = html;
 }
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // prevent the form from submitting
+  const title = form.elements.title.value;
+  const author = form.elements.author.value;
+  const myBook = {
+    title,
+    author,
+  };
+  BookList.push(myBook);
+  form.reset();
 
-BookContainer.innerHTML = html;
+  addData();
+});
