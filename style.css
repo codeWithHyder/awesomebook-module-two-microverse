@@ -20,6 +20,11 @@
   margin-top: 2rem;
 }
 
+input {
+  font-weight: bold;
+  padding-left: 3px;
+}
+
 .booklst input {
   width: 15rem;
   height: 1.5rem;

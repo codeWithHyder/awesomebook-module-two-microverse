@@ -44,6 +44,7 @@ formSection.innerHTML = `
 formsection.appendChild(formSection);
 
 // function to add a new book to the list
+// eslint-disable-next-line no-unused-vars
 function addBook() {
   const titleInput = document.querySelector('#booktitle');
   const authorInput = document.querySelector('#bookauth');
@@ -58,6 +59,7 @@ function addBook() {
 }
 
 // function to remove a book from the list
+// eslint-disable-next-line no-unused-vars
 function removeBook(index) {
   bookList.splice(index, 1);
   updateBookList();
@@ -72,7 +74,7 @@ const myForm = document.querySelector('.booklst');
 myForm.addEventListener('input', () => {
   const info = {
     title: bookTitle.value,
-    author: bookAuth.value
+    author: bookAuth.value,
   };
   localStorage.setItem('storedData', JSON.stringify(info));
 });
@@ -80,10 +82,6 @@ myForm.addEventListener('input', () => {
 // get data from local storage
 const userObject = JSON.parse(localStorage.getItem('storedData'));
 if (userObject) {
-  /*userObject = {
-    title: '',
-    author: ''
-  }; */ 
   bookTitle.value = userObject.title;
   bookAuth.value = userObject.author;
-} 
+}
