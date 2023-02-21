@@ -134,6 +134,8 @@ github
   - using API
   - Add animation
   - Add Good design
+  -To Refractor using jS classes
+  -Add books with Js 2015 (ES6)
 
 
 
