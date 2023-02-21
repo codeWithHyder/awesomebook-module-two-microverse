@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 .hr {
   width: 80%;
   margin-left: 0;
