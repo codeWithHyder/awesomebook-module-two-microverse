@@ -122,11 +122,18 @@ github
 - Twitter: [@hyder](https://twitter.com/@hyder3512)
 - LinkedIn: [Hyder](https://linkedin.com/in/https://www.linkedin.com/in/ghulam-hyder-dar-165653206?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bb%2FezSQOCSmG9eV79rGAzQQ%3D%3D)
 
+👤 Oscar
+
+- GitHub: [@byiringiroscar](https://github.com/byiringiroscar)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+[🔭 Future Features](#future-features)
+  - using API
+  - Add animation
+  - Add Good design
 
 
 
@@ -146,5 +153,5 @@ I would like to thank to coding partner Oscar whose collaboration helped and mad
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 

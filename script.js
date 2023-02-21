@@ -3,6 +3,11 @@ const bodyEle = document.querySelector('body');
 const formsection = document.createElement('section');
 bodyEle.appendChild(formsection);
 
+// class declaration
+class Booklist {
+  
+}
+
 // list of books
 const bookList = [];
 
