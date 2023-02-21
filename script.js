@@ -4,7 +4,7 @@ const formsection = document.createElement('section');
 bodyEle.appendChild(formsection);
 
 // list of books
-const bookList = [];
+let bookList = [];
 
 // function to update book list
 function updateBookList() {
@@ -44,7 +44,6 @@ formSection.innerHTML = `
 formsection.appendChild(formSection);
 
 // function to add a new book to the list
-// eslint-disable-next-line no-unused-vars
 function addBook() {
   const titleInput = document.querySelector('#booktitle');
   const authorInput = document.querySelector('#bookauth');
@@ -59,9 +58,11 @@ function addBook() {
 }
 
 // function to remove a book from the list
-// eslint-disable-next-line no-unused-vars
 function removeBook(index) {
   bookList.splice(index, 1);
+  const delItem = JSON.parse(localStorage.getItem('storedData'));
+  delItem.splice(index, 1);
+  localStorage.setItem('storedData', JSON.stringify(delItem));
   updateBookList();
 }
 
@@ -71,17 +72,21 @@ const bookAuth = document.querySelector('#bookauth');
 const myForm = document.querySelector('.booklst');
 
 // add eent listener on form data
-myForm.addEventListener('input', () => {
+myForm.addEventListener('click', () => {
   const info = {
     title: bookTitle.value,
     author: bookAuth.value,
   };
-  localStorage.setItem('storedData', JSON.stringify(info));
+  localStorage.setItem('storedData', JSON.stringify(bookList));
 });
 
-// get data from local storage
-const userObject = JSON.parse(localStorage.getItem('storedData'));
-if (userObject) {
-  bookTitle.value = userObject.title;
-  bookAuth.value = userObject.author;
-}
+window.onload = function () {
+  // Load data from localStorage into bookList
+  if (localStorage.getItem('storedData')) {
+    const parsedData = JSON.parse(localStorage.getItem('storedData'));
+    bookList = parsedData;
+    bookTitle.value = parsedData[parsedData.length - 1].title;
+    bookAuth.value = parsedData[parsedData.length - 1].author;
+  }
+  updateBookList();
+};
