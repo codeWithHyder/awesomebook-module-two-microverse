@@ -155,5 +155,5 @@ I would like to thank to coding partner Oscar whose collaboration helped and mad
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
