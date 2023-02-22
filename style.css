@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.bookheading {
+  text-align: center;
+}
+
 ul {
   display: flex;
   flex-direction: row;
