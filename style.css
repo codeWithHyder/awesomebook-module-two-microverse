@@ -4,55 +4,118 @@
   box-sizing: border-box;
 }
 
-.hr {
-  width: 80%;
-  margin-left: 0;
-  margin-top: 0.5rem;
+.bookheading {
+  text-align: center;
 }
 
-.booklst {
+/*.bookcontainer {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  width: 30%;
+  justify-content: center;
+  border: 1px solid rgb(98, 185, 98);
+  width: 40rem;
+  margin: 3rem;
+  list-style: none;
+  background-color: rgb(152, 241, 234);
   height: auto;
-  margin-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+/*.booklist {
+  border: 2px solid black;
+  height: auto;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(245, 241, 241);
+  list-style: none;
+  margin-top: 0;
+  row-gap: 0;
+  height: auto;
+  align-items: center;
+  padding: 1rem;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: 'lato', sans-serif;
+  height: 4rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  background-color: rgb(227, 235, 232);
+}
+
+ul li span {
+  display: inline-block;
+  width: 30.5rem;
+  padding-left: 0.5rem;
+  line-height: 4rem;
+}
+
+ul li button {
+  height: 3rem;
+  width: 7rem;
+  padding: 0rem;
+box-shadow: rgba(0, 0, 0, 0.788)  3px 5px;
+}
+
+hr {
+  border: 2px solid black;
+  width: 20%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addbook {
+  text-align: center;
   margin-top: 2rem;
+  font-size: 2rem;
 }
 
-input {
-  font-weight: bold;
-  padding-left: 3px;
+.addbooks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: right;
+  width: 100%;
 }
 
-.booklst input {
-  width: 15rem;
-  height: 1.5rem;
-  outline: none;
+.addbooks input {
+  width: 20rem;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
 }
 
-.booklst .btn {
-  width: 38%;
-  height: 1.5rem;
-}
-
-.booklst .btnr {
+.addbooks button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 5rem;
   height: 2rem;
-}
-
-.booklst li {
-  list-style: none;
-}
-
-.addbtn {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.3rem;
-  width: 3rem;
-  height: auto;
-  margin-left: 0;
-  margin-top: 1rem;
-  padding: 0.4rem;
+  margin-left: 56%;
   cursor: pointer;
+ 
 }
+
+
+
+
