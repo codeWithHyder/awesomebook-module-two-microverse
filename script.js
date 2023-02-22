@@ -10,7 +10,7 @@ class BookList {
         <button type="submit">Add</button>
       </form>
     `;
-    document.body.innerHTML = `<h1 class="bookheading"> All Awesome Books </h1>`;
+    document.body.innerHTML = `<h1 class='bookheading'> All Awesome Books </h1>`;
     document.body.appendChild(this.formSection);
     this.formSection.querySelector('form').addEventListener('submit', this.addBook.bind(this));
     this.bookListSection = document.createElement('section');
@@ -37,13 +37,12 @@ class BookList {
   updateBookList() {
     this.bookListSection.innerHTML = '';
     const bookElem = document.createElement('div');
-    bookElem.innerHTML += `<div class = "bookcontainer">`;
+    bookElem.innerHTML += `<div class = 'bookcontainer'>`;
     for (let i = 0; i < this.bookList.length; i += 1) {
-      
-      bookElem.innerHTML += `
+        bookElem.innerHTML += `
          <ul>
           <li> <span>"${this.bookList[i].title}"   by     ${this.bookList[i].author}</span></li>
-          <li> <button type="button" onclick="bookList.removeBook(${i})">Remove</button></li>
+          <li> <button type='button' onclick='bookList.removeBook(${i})'>Remove</button></li>
           </ul>`;
       this.bookListSection.appendChild(bookElem);
     }
@@ -64,8 +63,8 @@ class BookList {
     const storedBookList = localStorage.getItem('bookList');
     if (storedBookList) {
       this.bookList = JSON.parse(storedBookList);
-      document.querySelector('#booktitle').value = this.bookList[this.bookList.length-1].title;
-      document.querySelector('#bookauth').value = this.bookList[this.bookList.length-1].author;
+      document.querySelector('#booktitle').value = this.bookList[this.bookList.length - 1].title;
+      document.querySelector('#bookauth').value = this.bookList[this.bookList.length - 1].author;
     }
   }
 }
