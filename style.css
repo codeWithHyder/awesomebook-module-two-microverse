@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-/*.bookcontainer {
+/* .bookcontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,14 +22,15 @@
   margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-}*/
-/*.booklist {
+} */
+
+/* .booklist {
   border: 2px solid black;
   height: auto;
   width: 40rem;
   margin-left: auto;
   margin-right: auto;
-}*/
+} */
 ul {
   display: flex;
   flex-direction: row;
@@ -44,7 +45,6 @@ ul {
   width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 ul li {
@@ -70,8 +70,8 @@ ul li span {
 ul li button {
   height: 3rem;
   width: 7rem;
-  padding: 0rem;
-box-shadow: rgba(0, 0, 0, 0.788)  3px 5px;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.788)  3px 5px;
 }
 
 hr {
@@ -113,9 +113,4 @@ hr {
   height: 2rem;
   margin-left: 56%;
   cursor: pointer;
- 
 }
-
-
-
-
