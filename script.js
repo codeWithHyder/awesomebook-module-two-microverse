@@ -39,12 +39,12 @@ class BookList {
     const bookElem = document.createElement('div');
     bookElem.innerHTML += '<div class = "bookcontainer">';
     for (let i = 0; i < this.bookList.length; i += 1) {
-    bookElem.innerHTML += `
-    <ul>
-    <li> <span>'${this.bookList[i].title}'   by     ${this.bookList[i].author}</span></li>
-    <li> <button type='button' onclick='bookList.removeBook(${i})'>Remove</button></li>
-    </ul>`;
-    this.bookListSection.appendChild(bookElem);
+      bookElem.innerHTML += `
+      <ul>
+      <li> <span>'${this.bookList[i].title}'   by     ${this.bookList[i].author}</span></li>
+      <li> <button type='button' onclick='bookList.removeBook(${i})'>Remove</button></li>
+      </ul>`;
+      this.bookListSection.appendChild(bookElem);
     }
     bookElem.innerHTML += '</div>';
   }
